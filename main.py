@@ -90,6 +90,9 @@ def walkback(sentence, dp, row, col, idx, compact=True):
 def main():
     CNF_file_path = sys.argv[1]
 
+    mode = sys.argv[2] if len(
+        sys.argv) >= 3 else "expand"  # compact vs. expand
+
     sentences = [
         "Sales of the company to return to normalcy .",
         "The new products and services contributed to increase revenue .",
@@ -97,7 +100,7 @@ def main():
         "Figure skater lands historic quadruple jump in senior international competition at the 2019 World Figure Skating Championships on Day 3 but could only clinch a silver medal ."
     ]
     # sentence = input("Input sentence: ")
-    sentence = sentences[2]
+    sentence = sentences[1]
 
     lines = []
 
@@ -145,7 +148,7 @@ def main():
     print("Number of parses:", len(dp[0][-1]))
 
     for i in range(len(dp[0][-1])):
-        print(walkback(sentence, dp, 0, len(dp)-1, i, compact=False))
+        print(walkback(sentence, dp, 0, len(dp)-1, i, compact=(mode == "compact")))
 
 
 main()
