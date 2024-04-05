@@ -33,7 +33,6 @@ def CKY_parse(grammarMap: dict, sentence: str):
                             secondNodeName = secondChild[0]
 
                             # Get new parent from the two children
-                            print(firstNodeName, secondNodeName)
                             key = ' '.join([firstNodeName, secondNodeName])
 
                             if key not in grammarMap:
@@ -51,12 +50,12 @@ def CKY_parse(grammarMap: dict, sentence: str):
                                 ])
 
     # TEST
-    print()
-    for row in dp:
-        for cell in row:
-            print(cell, end=' ')
-        print()
-    print()
+    # print()
+    # for row in dp:
+    #     for cell in row:
+    #         print(cell, end=' ')
+    #     print()
+    # print()
 
     return dp
 
@@ -100,14 +99,14 @@ def main():
         "Figure skater lands historic quadruple jump in senior international competition at the 2019 World Figure Skating Championships on Day 3 but could only clinch a silver medal ."
     ]
     # sentence = input("Input sentence: ")
-    sentence = sentences[1]
+    sentence = sentences[0]
 
     lines = []
 
     # TEST
-    print()
-    print("Sentence:", sentence)
-    print()
+    # print()
+    # print("Sentence:", sentence)
+    # print()
 
     with open(CNF_file_path, 'r') as reader:
         while line := reader.readline():
@@ -143,12 +142,22 @@ def main():
 
     # Do a forward CKY parse
     dp = CKY_parse(grammarMap, sentence)
+
     print("Sentence:", sentence)
+    print()
+
     print("Parses:", dp[0][-1])
+    print()
+
     print("Number of parses:", len(dp[0][-1]))
+    print()
+
+    print("Walks:")
+    print()
 
     for i in range(len(dp[0][-1])):
         print(walkback(sentence, dp, 0, len(dp)-1, i, compact=(mode == "compact")))
+        print()
 
 
 main()
