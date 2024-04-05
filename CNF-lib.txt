@@ -1,0 +1,93 @@
+NOUN Sales
+NOUN revenue
+NOUN Dow
+NOUN month
+NOUN Figure
+NOUN skater
+NOUN company
+NOUN normalcy
+NOUN products
+NOUN services
+NOUN recession
+NOUN indicator
+NOUN worries
+NOUN jump
+NOUN World
+NOUN Figure
+NOUN Skating
+NOUN Championships
+NOUN Day
+NOUN silver
+NOUN medal
+NOUN competition
+NUM 2019
+NUM 3
+VERB return
+VERB contributed
+VERB increase
+VERB falls
+VERB flashed
+VERB continue
+VERB lands
+VERB could
+VERB clinch
+TO to
+ADV only
+PREP of
+PREP through
+PREP in
+PREP on
+PREP at
+ADJ economical
+ADJ historic
+ADJ quadruple
+ADJ new
+ADJ red
+ADJ senior
+ADJ international
+CONJ and
+CONJ as
+CONJ but
+DET the
+DET The
+DET a
+PD .
+NP NOUN NOUN
+NP NOUN PP
+NP X1 NOUN
+X1 NOUN CONJ
+NP X2 NOUN
+X2 DET NOUN
+NP X3 NP
+X3 DET ADJ
+NP X4 X4
+X4 NOUN NOUN
+NP NUM NP
+NP NOUN NUM
+NP ADJ X5
+X5 ADJ NOUN
+VP TO VERB
+VP VP PP
+VP X6 NOUN
+X6 VERB VP
+VP NOUN VERB
+VP X7 VP
+X7 VP CONJ
+VP X4 X8
+X8 VERB ADJ
+VP X5 VERB
+VP X9 VERB
+X9 VERB ADV
+VP X10 NP
+X10 NP VERB
+VP VP NP
+PP TO NOUN
+PP PREP NP
+PP PREP X2
+PP PREP X11
+X11 DET NP
+S X12 PD
+X12 NP VP
+S X13 X14
+X13 VP CONJ
+X14 VP PD
